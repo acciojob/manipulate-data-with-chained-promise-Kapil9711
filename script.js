@@ -9,7 +9,7 @@ function getData (){
 
 getData().then(data =>{
 	data = data.filter(num=> num % 2 === 0);
-	console.log(data)
+
 	return new Promise((resolve,reject)=>{
 	   setTimeout(()=>{
 		output.textContent = data.join();
